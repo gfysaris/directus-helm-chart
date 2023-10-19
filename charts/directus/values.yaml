@@ -49,9 +49,12 @@ ingress:
     - host: directus.trackvision.app
       paths:
       - path: /
+        pathType: Prefix
         backend:
-          serviceName: directus
-          servicePort: 8055
+          service:
+            name: directus
+            port:
+              number: 8055
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
