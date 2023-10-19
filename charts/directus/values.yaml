@@ -57,12 +57,14 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-extraEnvVars: {}
+# extraEnvVars: {}
   # An array to add extra environment variables
   # E.g.
-  # extraEnvVars:
-  #  - name: STORAGE_LOCATIONS
-  #    value: "s3"
+extraEnvVars:
+  - name: KEY
+    value: "my-d3m0-d1r3ctu5-k3y"
+  - name: SECRET
+    value: "my-d3m0-d1r3ctu5-53cr3t"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
