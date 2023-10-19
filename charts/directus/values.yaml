@@ -62,9 +62,9 @@ ingress:
   # E.g.
 extraEnvVars:
   - name: KEY
-    value: "my-d3m0-d1r3ctu5-k3y"
+    value: 'my-d3m0-d1r3ctu5-k3y'
   - name: SECRET
-    value: "my-d3m0-d1r3ctu5-53cr3t"
+    value: 'my-d3m0-d1r3ctu5-53cr3t'
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
