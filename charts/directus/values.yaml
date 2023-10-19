@@ -259,7 +259,13 @@ mariadb:
     ## updateStrategy for Mariadb Primary statefulset
     ## ref: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies
     ##
-    updateStrategy: RollingUpdate
+    # updateStrategy: RollingUpdate
+    updateStrategy:
+      ## StrategyType
+      ## Can be set to RollingUpdate or OnDelete
+      ##
+      type: RollingUpdate
+      rollingUpdate: {}    
 
     ## Partition update strategy for Mariadb Primary statefulset
     ## https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#partitions
@@ -555,7 +561,13 @@ mariadb:
     ## updateStrategy for Mariadb Secondary statefulset
     ## ref: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies
     ##
-    updateStrategy: RollingUpdate
+    # updateStrategy: RollingUpdate
+    updateStrategy:
+      ## StrategyType
+      ## Can be set to RollingUpdate or OnDelete
+      ##
+      type: RollingUpdate
+      rollingUpdate: {}    
 
     ## Partition update strategy for Mariadb Secondary statefulset
     ## https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#partitions
